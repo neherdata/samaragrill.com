@@ -1,6 +1,11 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import TagManager from "react-gtm-module";
+
+const tagManagerArgs = {
+  gtmId: "G-VDE7FK31MC",
+};
 
 function App() {
   return (
@@ -22,5 +27,5 @@ function App() {
     </div>
   );
 }
-
+TagManager.initialize(tagManagerArgs);
 export default App;
