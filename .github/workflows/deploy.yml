@@ -15,7 +15,6 @@ jobs:
       group: ${{ github.workflow }}-${{ github.ref }}
     environment:
       name: github-pages
-      url: ${{steps.deployment.outputs.page_url}}
     steps:
       - uses: actions/checkout@v3
 
@@ -35,3 +34,4 @@ jobs:
           publish_dir: ./
           user_name: "github-actions[bot]"
           user_email: "github-actions[bot]@users.noreply.github.com"
+          cname: samaragrill.neherdata.com
